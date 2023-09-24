@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react"
+import './Button.css' 
 
 export type ButtonProps = {
   onClick(): void
@@ -7,7 +8,12 @@ export type ButtonProps = {
   isDisabled: boolean
 }
 
-export function Button({children, onClick, isDisabled, variant }: ButtonProps) {
+export function Button({
+  children = 'Button Name', 
+  onClick, 
+  isDisabled, 
+  variant = 'primary'
+}: ButtonProps) {
   const className: string = `button button-${variant}`;
   return (
     <button onClick={onClick} disabled={isDisabled} className={className}>

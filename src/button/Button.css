@@ -1,0 +1,14 @@
+.button{
+  color:#fff;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius:  0.25rem;
+}
+
+.button-primary{
+  background-color: aquamarine;
+}
+
+.button-success{
+  background-color: rgb(63, 52, 213);
+}
